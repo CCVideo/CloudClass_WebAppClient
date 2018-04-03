@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<div class="spinner" id="loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+
+<div class="tip-top" id="offline">
+    网络异常，正在重新连接...
+</div>
+<div class="tip-bottom" id="unLockScreen">
+    讲师已取消锁屏
+</div>
+<div class="tip-bottom" id="lockScreen">
+    讲师已锁屏
+</div>
+<div class="tip-box" id="offlineMsg">
+    <h3>提示</h3>
+    <div class="text">网络异常，请检查网络后重试</div>
+    <div class="btn">
+        <button id="refresh">重试</button>
+    </div>
+</div>
+<div class="tip-box" id="errMsg">
+    <h3>提示</h3>
+    <div class="text">直播间地址错误，请检查</div>
+    <div class="btn">
+        <button id="errMsgBtn">确定</button>
+    </div>
+</div>
+<div class="tip-box" id="updateMsg">
+    <h3>提示</h3>
+    <div class="text">云直播学员客户端已更新，请升级</div>
+    <div class="btn">
+        <button id="updateMsgBtn">下载</button>
+    </div>
+</div>
+<div class="viewer">
+    <webview id="viewer"
+             src="https://class.csslcloud.net/index/presenter/?roomid=645B41C5DC8361019C33DC5901307461&userid=E9607DAFB705A798"
+             autosize="on">
+    </webview>
+</div>
+<script type="text/javascript">
+    require('./js/index');
+</script>
+</body>
+</html>

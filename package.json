@@ -1,0 +1,13 @@
+{
+  "name": "yunclass",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "云课堂客户端，允许浏览器不支持的用户参与云课堂",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "log4js": "^2.3.12",
+    "moment": "^2.19.2"
+  }
+}
